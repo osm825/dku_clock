@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>DKU CLOCK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="dday-container">
+      <h1 id="countdown">종강 날짜를 선택하세요</h1>
+    </div>
+    <div class="date-container">
+      <input type="date" id="date-picker">
+    </div>
+    <div class="icons-container">
+      <a href="https://portal.dankook.ac.kr" target="_blank"><img src="images/icon1.png" alt="Icon 1"></a>
+      <a href="https://webinfo.dankook.ac.kr" target="_blank"><img src="images/icon2.png" alt="Icon 2"></a>
+      <a href="https://canvas.dankook.ac.kr/" target="_blank"><img src="images/icon3.png" alt="Icon 3"></a>
+      <a href="https://lib.dankook.ac.kr/" target="_blank"><img src="images/icon4.png" alt="Icon 4"></a>
+    </div>
+    <div class="weather-container" id="weather"></div>
+    <button id="weather-toggle">날씨</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

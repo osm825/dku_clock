@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 40px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+  
+  .dday-container {
+    margin-bottom: 20px;
+  }
+
+  .date-container{
+    font-size: 10px;
+  }
+
+  #countdown {
+    font-size: 2em;
+  }
+  
+  .icons-container a {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: center;
+  }
+  
+  .icons-container img {
+    max-width: 40%;
+    height: auto;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .weather-container {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+  }
+
+  #weather-toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #date-picker {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  .ibm-plex-sans-kr-medium {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }  
