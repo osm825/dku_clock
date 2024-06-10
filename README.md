@@ -1,4 +1,3 @@
-<img width="1470" alt="스크린샷 2024-06-10 오후 2 16 58" src="https://github.com/osm825/dku_clock/assets/165738330/4f4f3a88-a4de-47d7-865b-42bacd7a5731">#DKU CLOCK
 
 
 #2024학년도 1학기 프로젝트
