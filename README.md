@@ -1,4 +1,4 @@
-#DKU CLOCK
+<img width="1470" alt="스크린샷 2024-06-10 오후 2 16 58" src="https://github.com/osm825/dku_clock/assets/165738330/4f4f3a88-a4de-47d7-865b-42bacd7a5731">#DKU CLOCK
 
 
 #2024학년도 1학기 프로젝트
@@ -19,3 +19,10 @@
 - 배경화면을 포함한 전체 디자인 보완 필요
 - 학사 공지를 보여주는 기능을 위한 코드 작성 중
 - 현재까지의 코드 업로드
+
+
+
+[예시 사진]
+<img width="1470" alt="1" src="https://github.com/osm825/dku_clock/assets/165738330/1c61db7c-3ed6-4f0e-bd51-ed53891fc430">
+<img width="1470" alt="2" src="https://github.com/osm825/dku_clock/assets/165738330/f991474b-5c5c-471f-a787-c6fdf8660cd3">
+<img width="1470" alt="3" src="https://github.com/osm825/dku_clock/assets/165738330/7cba6ec5-8638-43b6-8594-1ad5622a1d42">
