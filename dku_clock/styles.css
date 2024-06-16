@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:"IBM Plex Sans KR", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@ body {
     background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
   }
-  
+
   .container {
     text-align: center;
     color:#fff;
@@ -17,12 +17,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-size: 40px;
+    font-size: 50px;
     font-family: "IBM Plex Sans KR", sans-serif;
   }
   
   .dday-container {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .date-container{
@@ -33,38 +33,54 @@ body {
     font-size: 2em;
   }
   
+  .icons-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
   .icons-container a {
     display: inline-block;
     justify-content: center;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 50px;
     align-items: center;
+    max-width: 30%;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
   }
   
-  .icons-container img {
-    max-width: 40%;
+  .icons-item{
+    text-align: center;
+    align-items: center;
+  }
+
+  .icons-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30px;
     height: auto;
     cursor: pointer;
     align-items: center;
+    text-align: center;
+  }
+
+  .icons-item p {
+    margin-top: 5px;
+    font-size: 10px;
+    color:#fff;
+    text-align: center;
   }
   
   .weather-container {
-    display: none;
     position: absolute;
     top: 20px;
     right: 20px;
     text-align: right;
-  }
-
-  #weather-toggle{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    text-decoration: underline;
-    color: #fff;
-    cursor: pointer;
+    font-size: 10px;
+    font-family: "IBM Plex Sans KR", sans-serif;
   }
   
   #date-picker {
@@ -77,4 +93,19 @@ body {
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }  
+  }
+  
+  .notice{
+    position: absolute;
+    top:20px;
+    left:20px;
+    text-align: left;
+    font-size: 10px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    color: #fff;
+  }
+
+  .notice a{
+    color: #fff;
+    margin-right: 30px;
+  }
