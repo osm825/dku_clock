@@ -53,10 +53,15 @@
 - script.js 파일 수정
   1) 날씨 정보를 받아 올 지역 설정 (용인시)
   2) 날씨 세부 정보 설정
+     
      a) description
+     
      b) temp
+     
      c) humidity
+     
      d) temp_max
+     
      e) temp_min
 - styles.css 파일 수정
   1) 아이콘 배치 및 사이즈 수정
