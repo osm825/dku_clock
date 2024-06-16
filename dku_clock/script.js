@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const countdownElement = document.getElementById('countdown');
     const datePicker = document.getElementById('date-picker');
     const weatherContainer = document.getElementById('weather');
-    const API_KEY = 'dc9d142f650d1c51243bed90983a8f6d'; // OpenWeatherMap API 키
+    const API_KEY = 'YOUR_OpenWeatherMap_API_KEY'; // OpenWeatherMap API 키
   
     // 저장된 날짜를 불러와서 D-Day 계산
     chrome.storage.sync.get(['targetDate'], function (result) {
