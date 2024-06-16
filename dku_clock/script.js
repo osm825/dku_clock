@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetDate = new Date(date).getTime();
       const now = new Date().getTime();
       const distance = targetDate - now;
-  
+      
       if (isNaN(targetDate)) {
         countdownElement.textContent = '종강 날짜를 선택하세요';
         return;
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+
       countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   
       if (distance < 0) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // 날씨 정보 가져오기
     function fetchWeather() {
-      const city = 'Seoul'; // 원하는 도시 이름
+      const city = 'Yongin'; // 원하는 도시 이름
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=kr`;
   
       fetch(url)
@@ -57,7 +57,11 @@ document.addEventListener('DOMContentLoaded', function () {
           if(data.main&&data.main.temp){
             const temp = data.main.temp;
             const description = data.weather[0].description;
-            weatherContainer.innerHTML = `<p>${city}</p><p>${temp}°C</p><p>${description}</p>`;
+            const humidity = data.main.humidity;
+            const temp_min = data.main.temp_min;
+            const temp_max = data.main.temp_max;
+            weatherContainer.innerHTML = `<p>오늘의 날씨: ${description}</p><p>기온: ${temp}°C</p><p>습도: ${humidity}%<\p><p>최고 기온: ${temp_max}°C<\p><p>최저 기온: ${temp_min}°C<\p>`;
+        
           } else{
             console.error('Invalid weather data format');
           }
@@ -68,22 +72,5 @@ document.addEventListener('DOMContentLoaded', function () {
   
     fetchWeather();
 
+
   });
-
-
-// 페이지 로드 시 초기에는 날씨 정보를 숨김
-document.addEventListener('DOMContentLoaded', function() {
-  const weatherContainer = document.getElementById('weather-container');
-  if(weatherContainer){
-    weatherContainer.style.display = 'none';
-  }
-});
-
-// 날씨 정보를 클릭하여 열고 닫는 함수
-function toggleWeather() {
-  const weatherContainer = document.getElementById('weather-container');
-  weatherContainer.classList.toggle('hidden');
-}
-
-// 날씨 정보를 클릭할 때 토글 기능 적용
-document.getElementById('weather-toggle').addEventListener('click', toggleWeather);
