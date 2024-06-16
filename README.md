@@ -76,6 +76,7 @@
  ![image](https://github.com/osm825/dku_clock/assets/165738330/51859027-3c86-4626-95e5-6a75a556957b)
 
  종강 날짜 선택 후 - 종강 후
- ![image](https://github.com/osm825/dku_clock/assets/165738330/f95e4c7f-87df-40d6-9ec0-a1f19a45b08f)
+![image](https://github.com/osm825/dku_clock/assets/165738330/8282d3c0-3acb-450c-94ca-fa6ac57ec411)
+
 
 
